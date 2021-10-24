@@ -4,6 +4,8 @@
   "description": "for typescript demo",
   "main": "whyuseprototype.js",
   "scripts": {
+    "start": "parcel ./index.html",
+    "dev": "nodemon --watch src/ -e ts --exec ts-node ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/stiles001/TypeScript/issues"
   },
-  "homepage": "https://github.com/stiles001/TypeScript#readme"
+  "homepage": "https://github.com/stiles001/TypeScript#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.4.4"
+  }
 }
